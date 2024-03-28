@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Telmo J. Moura",
-  description: "Web/Mobile Developer",
+  description: "Web/Mobile Developer Personal Web Site",
   icons: {
     icon: "assets/iconSite.png",
   },
