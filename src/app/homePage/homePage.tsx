@@ -11,8 +11,8 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-slate-500">
-        <div className="w-full min-h-min z-20">
+      <div className="min-h-screen bg-white">
+        <div className="w-full min-h-min z-20 ">
           <div className="absolute mt-[10%] pl-[57%]">
             <p className="text-5xl text-custom-blue font-teko">
               Telmo J. Moura
@@ -34,6 +34,7 @@ export default function HomePage() {
               zIndex: "-1",
             }}
           />
+          <div className="absolute bottom-0 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-white"></div>
         </div>
         <p>homePage</p>
       </div>
