@@ -21,13 +21,13 @@ function Header() {
       </div>
 
       <div className="flex items-center space-x-reverse">
-        <div className="text-custom-blue font-semibold px-2 hover:font-bold cursor-pointer">
+        <div className="text-custom-blue font-teko px-2 text-xl hover:text-custom-yellow  cursor-pointer">
           <p>SOBRE MIM</p>
         </div>
-        <div className="text-custom-blue font-semibold px-2 hover:font-bold cursor-pointer">
+        <div className="text-custom-blue font-teko px-2 text-xl hover:text-custom-yellow  cursor-pointer">
           <p>PROJETOS</p>
         </div>
-        <div className="text-custom-blue font-semibold px-2 hover:font-bold cursor-pointer">
+        <div className="text-custom-blue font-teko px-2 text-xl hover:text-custom-yellow cursor-pointer">
           <p>CONTACTOS</p>
         </div>
       </div>
