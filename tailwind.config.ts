@@ -17,6 +17,11 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        lobster: ["Lobster", "sans-serif"],
+        caveat: ["Caveat", "sans-serif"],
+        teko: ["Teko", "sans-serif"],
+      },
     },
   },
   plugins: [],
