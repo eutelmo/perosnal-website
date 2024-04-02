@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         "custom-blue": "#00315E",
         "custom-yellow": "#DAF200",
+        "custom-baby-blue": "#00BFD8"
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
