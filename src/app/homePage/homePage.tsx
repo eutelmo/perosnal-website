@@ -24,12 +24,12 @@ export default function HomePage() {
               Telmo J. Moura
             </p>
             <p className="text-8xl text-custom-blue font-lobster">
-              Front End <br/> Developer
+              Front End <br /> Developer
             </p>
           </div>
           <Image
             src={photo1}
-            alt="Site Icon"
+            alt="Site-Icon"
             width={0}
             height={0}
             sizes="100vw"
@@ -154,8 +154,6 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-
-
       </div>
     </>
   );

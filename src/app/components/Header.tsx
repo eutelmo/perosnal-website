@@ -12,14 +12,10 @@ function Header() {
         </div>
         <div>
           <p className="font-bold text-custom-yellow text-lg leading-5 ml-2">
-            Telmo J.
-          </p>
-          <p className="font-bold text-custom-yellow text-lg leading-5 ml-2">
-            Moura
+            Telmo J. <br /> Moura
           </p>
         </div>
       </div>
-
       <div className="flex items-center space-x-reverse">
         <div className="text-custom-blue font-teko px-2 text-xl hover:text-custom-yellow  cursor-pointer">
           <p>SOBRE MIM</p>
