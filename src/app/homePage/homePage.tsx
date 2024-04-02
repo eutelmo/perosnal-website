@@ -24,7 +24,7 @@ export default function HomePage() {
               Telmo J. Moura
             </p>
             <p className="text-8xl text-custom-blue font-lobster">
-              Front End <br /> Developer
+              Front End <br/> Developer
             </p>
           </div>
           <Image
@@ -42,6 +42,8 @@ export default function HomePage() {
           />
           <div className="absolute bottom-0 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-white"></div>
         </div>
+
+        {/* stack section */}
         <div className="flex px-40 justify-between mt-10 mb-9">
           <div className="">
             <div className="flex">
@@ -144,7 +146,7 @@ export default function HomePage() {
                 />
               </div>
             </div>
-            <p className="font-teko text-center text-custom-blue text-3xl mt-4 leading-3">
+            <p className="font-teko text-center text-custom-blue text-3xl mt-4 leading-4">
               Mobile
             </p>
             <p className="font-teko text-center text-custom-baby-blue text-lg">
@@ -152,6 +154,8 @@ export default function HomePage() {
             </p>
           </div>
         </div>
+
+
       </div>
     </>
   );
