@@ -3,6 +3,12 @@ import React from "react";
 //Utils
 import Image from "next/image";
 import photo1 from "../../../public/photo2.png";
+import typescript from "../../../public/assets/icons/typescript.png";
+import javascript from "../../../public/assets/icons/js.png";
+import vue from "../../../public/assets/icons/vue.png";
+import react from "../../../public/assets/icons/react.png";
+import next from "../../../public/assets/icons/next-js.png";
+import reactNative from "../../../public/assets/icons/react-native.png";
 
 //Components
 import Header from "../components/Header";
@@ -18,7 +24,7 @@ export default function HomePage() {
               Telmo J. Moura
             </p>
             <p className="text-8xl text-custom-blue font-lobster">
-              Web/Mobile <br /> Developer
+              Front End <br /> Developer
             </p>
           </div>
           <Image
@@ -36,7 +42,116 @@ export default function HomePage() {
           />
           <div className="absolute bottom-0 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-white"></div>
         </div>
-        <p>homePage</p>
+        <div className="flex px-40 justify-between mt-10 mb-9">
+          <div className="">
+            <div className="flex">
+              <div>
+                <Image
+                  src={javascript}
+                  alt="Site Icon"
+                  width={70}
+                  height={70}
+                  style={{
+                    objectFit: "cover",
+                    zIndex: "1",
+                  }}
+                />
+              </div>
+              <div className="-ml-5">
+                <Image
+                  src={typescript}
+                  alt="Site Icon"
+                  width={70}
+                  height={70}
+                  style={{
+                    objectFit: "cover",
+                    zIndex: "2",
+                    marginLeft: "-20",
+                  }}
+                />
+              </div>
+            </div>
+            <p className="font-teko text-center text-custom-blue text-3xl mt-4 leading-3">
+              language
+            </p>
+            <p className="font-teko text-center text-custom-baby-blue text-lg">
+              Javascript, Typescript
+            </p>
+          </div>
+
+          <div className="">
+            <div className="flex">
+              <div>
+                <Image
+                  src={vue}
+                  alt="Site Icon"
+                  width={70}
+                  height={70}
+                  style={{
+                    objectFit: "cover",
+                    zIndex: "1",
+                  }}
+                />
+              </div>
+              <div className="-ml-9">
+                <Image
+                  src={react}
+                  alt="Site Icon"
+                  width={70}
+                  height={70}
+                  style={{
+                    objectFit: "cover",
+                    zIndex: "2",
+                    marginLeft: "-20",
+                  }}
+                />
+              </div>
+              <div className="-ml-8">
+                <Image
+                  src={next}
+                  alt="Site Icon"
+                  width={70}
+                  height={70}
+                  style={{
+                    objectFit: "cover",
+                    zIndex: "2",
+                    marginLeft: "-20",
+                  }}
+                />
+              </div>
+            </div>
+            <p className="font-teko text-center text-custom-blue text-3xl mt-4 leading-3">
+              Web
+            </p>
+
+            <p className="font-teko text-center text-custom-baby-blue text-lg ">
+              Vue, React, Next
+            </p>
+          </div>
+
+          <div className="">
+            <div className="flex">
+              <div>
+                <Image
+                  src={react}
+                  alt="Site Icon"
+                  width={70}
+                  height={70}
+                  style={{
+                    objectFit: "cover",
+                    zIndex: "1",
+                  }}
+                />
+              </div>
+            </div>
+            <p className="font-teko text-center text-custom-blue text-3xl mt-4 leading-3">
+              Mobile
+            </p>
+            <p className="font-teko text-center text-custom-baby-blue text-lg">
+              React Native
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
