@@ -12,6 +12,7 @@ import reactNative from "../../../public/assets/icons/react-native.png";
 
 //Components
 import Header from "../components/Header";
+import ResumeBox from "../components/ResumeBox";
 
 export default function HomePage() {
   return (
@@ -154,6 +155,9 @@ export default function HomePage() {
             </p>
           </div>
         </div>
+
+        {/* Resume Component */}
+        <ResumeBox />
       </div>
     </>
   );
