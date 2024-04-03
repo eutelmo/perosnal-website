@@ -35,6 +35,7 @@ export default function PortefolioComponent({
             style={{
               width: "100%",
               height: "418px",
+              objectFit:"cover",
               // opacity: "1",
               borderRadius: "8px",
             }}
