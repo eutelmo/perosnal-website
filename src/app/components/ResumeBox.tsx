@@ -20,11 +20,11 @@ export default function ResumeBox() {
 
             <p className="text-base text-custom-blue text-justify ">
               Nesta jornada profissional, sou como o Frodo, enfrentando reuniões
-              e desafios como se fossem a Montanha da Destinação. Enfrentei bugs
-              como se fossem Orcs e aprendi com sábios mestres do YouTube. Com
-              meu mapa do tesouro repleto de experiências e humor afiado, estou
-              pronto para ser o Gandalf da vossa equipe - menos barba, mais
-              habilidades técnicas!
+              e desafios como se fossem a Mount Doom. Enfrentei bugs como se
+              fossem Orcs e aprendi com sábios mestres do YouTube. Com meu mapa
+              do tesouro repleto de experiências e humor afiado, estou pronto
+              para ser o Gandalf da vossa equipe - menos barba, mais habilidades
+              técnicas!
             </p>
 
             <DownloadFile />
