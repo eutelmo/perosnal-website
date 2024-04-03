@@ -2,6 +2,8 @@ import React from "react";
 
 //Utils
 import Image from "next/image";
+
+//Images
 import photo1 from "../../../public/photo2.png";
 import typescript from "../../../public/assets/icons/typescript.png";
 import javascript from "../../../public/assets/icons/js.png";
@@ -13,13 +15,15 @@ import reactNative from "../../../public/assets/icons/react-native.png";
 //Components
 import Header from "../components/Header";
 import ResumeBox from "../components/ResumeBox";
+import PortefolioComponent from "../components/portefolioComponent";
+import Projectswipe from "../components/projectswipe";
 
 export default function HomePage() {
   return (
     <>
       <Header />
       <div className="min-h-screen bg-white">
-        <div className="w-full min-h-min z-20 ">
+        <div className="w-full min-h-min z-20">
           <div className="absolute mt-[10%] pl-[57%]">
             <p className="text-5xl text-custom-blue font-teko">
               Telmo J. Moura
@@ -37,7 +41,7 @@ export default function HomePage() {
             style={{
               width: "100%",
               height: "100vh",
-              objectFit: "cover",
+              // objectFit: "cover",
               zIndex: "-1",
             }}
           />
@@ -158,6 +162,9 @@ export default function HomePage() {
 
         {/* Resume Component */}
         <ResumeBox />
+
+        {/* Swipe with Portefolio */}
+        <Projectswipe />
       </div>
     </>
   );
