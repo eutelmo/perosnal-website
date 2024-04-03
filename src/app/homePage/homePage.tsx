@@ -22,7 +22,7 @@ export default function HomePage() {
     <>
       <Header />
       <div className="min-h-screen bg-white">
-        <div className="w-full min-h-min z-20 ">
+        <div className="w-full min-h-min z-20">
           <div className="absolute mt-[10%] pl-[57%]">
             <p className="text-5xl text-custom-blue font-teko">
               Telmo J. Moura
@@ -40,7 +40,7 @@ export default function HomePage() {
             style={{
               width: "100%",
               height: "100vh",
-              objectFit: "cover",
+              // objectFit: "cover",
               zIndex: "-1",
             }}
           />
@@ -163,7 +163,12 @@ export default function HomePage() {
         <ResumeBox />
 
         {/* Swipe with Portefolio */}
-        <PortefolioComponent />
+        <div className="flex">
+          <PortefolioComponent languages="typescript" title="Projeto bonito"/>
+          <PortefolioComponent languages="typescript" title="Projeto bonito"/>
+          <PortefolioComponent languages="typescript" title="Projeto bonito"/>
+          <PortefolioComponent languages="typescript" title="Projeto bonito"/>
+        </div>
       </div>
     </>
   );
