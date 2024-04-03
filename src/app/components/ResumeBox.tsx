@@ -7,7 +7,7 @@ import DownloadFile from "./downloadFile";
 
 export default function ResumeBox() {
   return (
-    <div className="px-10 mb-9 ">
+    <div className="px-10 mb-9">
       <div className="bg-custom-yellow rounded-lg h-auto p-5 flex">
         <div className="w-[50%] pr-10">
           <div className=" h-[100%]  flex justify-center  flex-col">

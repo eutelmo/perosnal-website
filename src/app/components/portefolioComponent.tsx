@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 //Utils
 import Image from "next/image";
@@ -15,10 +15,9 @@ export default function PortefolioComponent({
   languages,
   title,
 }: PortefolioProfs) {
-  // export default function PortefolioComponent() {
   return (
     <>
-      <div className="relative mb-5 h-[418px]">
+      <div className="relative mb-5 h-[418px] rounded-lg bg-black z-20">
         <div className="absolute mt-[90%] pl-[10%]">
           <div className="bg-custom-yellow px-1 w-auto inline-block">
             <p className="text-sm text-custom-blue font-teko">{languages}</p>
@@ -26,20 +25,21 @@ export default function PortefolioComponent({
           <p className="text-2xl text-white font-teko">{title}</p>
         </div>
 
-        <Image
-          src={`https://source.unsplash.com/random/developing,${languages}`}
-          alt="Portefolio-IMG"
-          width={20}
-          height={418}
-          unoptimized={true}
-          style={{
-            width: "100%",
-            height: "418px",
-            opacity: "1",
-            zIndex: "1",
-            borderRadius: "8px",
-          }}
-        />
+        <div className="">
+          <Image
+            src={`https://source.unsplash.com/random/?developer,${languages},web-developing`}
+            alt="Portefolio-IMG"
+            width={20}
+            height={418}
+            unoptimized={true}
+            style={{
+              width: "100%",
+              height: "418px",
+              // opacity: "1",
+              borderRadius: "8px",
+            }}
+          />
+        </div>
       </div>
     </>
   );
