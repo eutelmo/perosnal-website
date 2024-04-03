@@ -12,6 +12,7 @@ import reactNative from "../../../public/assets/icons/react-native.png";
 
 //Components
 import Header from "../components/Header";
+import ResumeBox from "../components/ResumeBox";
 
 export default function HomePage() {
   return (
@@ -24,12 +25,12 @@ export default function HomePage() {
               Telmo J. Moura
             </p>
             <p className="text-8xl text-custom-blue font-lobster">
-              Front End <br/> Developer
+              Front End <br /> Developer
             </p>
           </div>
           <Image
             src={photo1}
-            alt="Site Icon"
+            alt="Site-Icon"
             width={0}
             height={0}
             sizes="100vw"
@@ -155,7 +156,8 @@ export default function HomePage() {
           </div>
         </div>
 
-
+        {/* Resume Component */}
+        <ResumeBox />
       </div>
     </>
   );
