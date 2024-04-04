@@ -27,7 +27,7 @@ export default function ResumeBox() {
               técnicas!
             </p>
 
-            <DownloadFile />
+            <DownloadFile isFooter={false} />
           </div>
         </div>
 
