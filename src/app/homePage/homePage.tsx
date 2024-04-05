@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 //Images
-import photo1 from "../../../public/photo2.png";
+import photo1 from "../../../public/photoForHomepage.jpg";
 import typescript from "../../../public/assets/icons/typescript.png";
 import javascript from "../../../public/assets/icons/js.png";
 import vue from "../../../public/assets/icons/vue.png";
@@ -26,10 +26,10 @@ export default function HomePage() {
       <div className="min-h-screen bg-white">
         <div className="w-full min-h-min z-20">
           <div className="absolute mt-[10%] pl-[57%]">
-            <p className="text-5xl text-custom-blue font-teko">
+            <p className="text-5xl w-[60%] backdrop-blur-sm text-custom-yellow font-teko ">
               Telmo J. Moura
             </p>
-            <p className="text-8xl text-custom-blue font-lobster">
+            <p className="text-8xl  backdrop-blur-sm text-custom-yellow font-lobster">
               Front End <br /> Developer
             </p>
           </div>
@@ -42,7 +42,7 @@ export default function HomePage() {
             style={{
               width: "100%",
               height: "100vh",
-              // objectFit: "cover",
+              objectFit: "cover",
               zIndex: "-1",
             }}
           />
