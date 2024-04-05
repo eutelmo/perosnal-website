@@ -6,13 +6,13 @@ import IconWebsite from "../../../public/iconSite.png";
 import DownloadFile from "./downloadFile";
 import TextLink from "./textLink";
 
-interface Headerprops{
-  isMainHeader: boolean
+interface Headerprops {
+  isMainHeader: boolean;
 }
 
-function Header({isMainHeader}: Headerprops) {
+function Header({ isMainHeader }: Headerprops) {
   return (
-    <div className="p-5 py-5 w-full max-h-20 bg-transparent flex items-center absolute justify-between z-50">
+    <div className="p-5 py-5 w-full max-h-20  backdrop-blur-sm flex items-center absolute justify-between z-50">
       <div className="flex items-center">
         <div className="w-10 h-10 rounded-lg overflow-hidden">
           <Image src={IconWebsite} alt="Site Icon" fill={false} />
