@@ -6,29 +6,24 @@ import Image from "next/image";
 // Image
 import IconWebsite from "../../../public/iconSite.png";
 import GithubIcon from "../../../public/assets/icons/github-logo.png";
+import FooterGraphics from "../../../public/assets/icons/grafismo-footer.svg";
+
+//Components
 import DownloadFile from "./downloadFile";
-import TextLink from "./textLink";
+import FooterLogo from "./FooterLogosLink";
+import TextLinkForFooter from "./textLinkForFooter";
 
 export default function Footer() {
   return (
-    <div className="bg-custom-yellow px-10 py-5 flex justify-between ">
+    <div className="bg-custom-yellow px-10 py-5 flex justify-between relative ">
       {/* Logo */}
-      <div className="flex flex-col items-center justify-center">
-        <div className="w-10 h-10 rounded-lg overflow-hidden">
-          <Image src={IconWebsite} alt="Site Icon" fill={false} />
-        </div>
-        <div>
-          <p className="font-bold text-custom-blue text-lg leading-5 ml-2">
-            Telmo J. <br /> Moura
-          </p>
-        </div>
-      </div>
+      <FooterLogo url="/" isPageLogo={true} />
 
       {/* Links */}
       <div className="flex flex-col items-start space-x-reverse">
-        <TextLink url="" text="SOBRE MIM" />
-        <TextLink url="" text="PROJETOS" />
-        <TextLink url="" text="CONTACTOS" />
+        <TextLinkForFooter isMainHeader={true} url="/about" text="SOBRE MIM" />
+        <TextLinkForFooter isMainHeader={true} url="" text="PROJETOS" />
+        <TextLinkForFooter isMainHeader={true} url="" text="CONTACTOS" />
         <div className="text-custom-blue font-teko px-2 text-xl underline decoration-solid hover:opacity-50 cursor-pointer">
           <DownloadFile isFooter={true} />
         </div>
@@ -48,9 +43,12 @@ export default function Footer() {
       </div>
 
       {/* Git */}
-      <div className="flex flex-col items-center justify-center cursor-pointer">
-        <div className="w-10 h-10 rounded-lg overflow-hidden">
-          <Image src={GithubIcon} alt="Site Icon" fill={false} />
+      <FooterLogo url="https://github.com/eutelmo" isPageLogo={false} />
+
+      {/* Graphic */}
+      <div>
+        <div className="h-[100%] rounded-lg overflow-hidden absolute top-0 right-0 ">
+          <Image src={FooterGraphics} alt="Site Icon" />
         </div>
       </div>
     </div>
