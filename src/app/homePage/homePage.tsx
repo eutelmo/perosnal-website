@@ -22,7 +22,7 @@ import Footer from "../components/Footer";
 export default function HomePage() {
   return (
     <>
-      <Header />
+      <Header isMainHeader={true}/>
       <div className="min-h-screen bg-white">
         <div className="w-full min-h-min z-20">
           <div className="absolute mt-[10%] pl-[57%]">

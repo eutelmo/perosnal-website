@@ -10,20 +10,20 @@ import FooterGraphics from "../../../public/assets/icons/grafismo-footer.svg";
 
 //Components
 import DownloadFile from "./downloadFile";
-import TextLink from "./textLink";
 import FooterLogo from "./FooterLogosLink";
+import TextLinkForFooter from "./textLinkForFooter";
 
 export default function Footer() {
   return (
-    <div className="bg-custom-yellow px-10 py-5 flex justify-between relative">
+    <div className="bg-custom-yellow px-10 py-5 flex justify-between relative ">
       {/* Logo */}
       <FooterLogo url="/" isPageLogo={true} />
 
       {/* Links */}
       <div className="flex flex-col items-start space-x-reverse">
-        <TextLink url="" text="SOBRE MIM" />
-        <TextLink url="" text="PROJETOS" />
-        <TextLink url="" text="CONTACTOS" />
+        <TextLinkForFooter isMainHeader={true} url="/about" text="SOBRE MIM" />
+        <TextLinkForFooter isMainHeader={true} url="" text="PROJETOS" />
+        <TextLinkForFooter isMainHeader={true} url="" text="CONTACTOS" />
         <div className="text-custom-blue font-teko px-2 text-xl underline decoration-solid hover:opacity-50 cursor-pointer">
           <DownloadFile isFooter={true} />
         </div>

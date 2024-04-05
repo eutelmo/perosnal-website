@@ -6,7 +6,11 @@ import IconWebsite from "../../../public/iconSite.png";
 import DownloadFile from "./downloadFile";
 import TextLink from "./textLink";
 
-function Header() {
+interface Headerprops{
+  isMainHeader: boolean
+}
+
+function Header({isMainHeader}: Headerprops) {
   return (
     <div className="p-5 py-5 w-full max-h-20 bg-transparent flex items-center absolute justify-between z-50">
       <div className="flex items-center">
@@ -20,9 +24,9 @@ function Header() {
         </div>
       </div>
       <div className="flex items-center space-x-reverse">
-        <TextLink url="" text="SOBRE MIM" />
-        <TextLink url="" text="PROJETOS" />
-        <TextLink url="" text="CONTACTOS" />
+        <TextLink isMainHeader={isMainHeader} url="/about" text="SOBRE MIM" />
+        <TextLink isMainHeader={isMainHeader} url="" text="PROJETOS" />
+        <TextLink isMainHeader={isMainHeader} url="" text="CONTACTOS" />
       </div>
     </div>
   );
