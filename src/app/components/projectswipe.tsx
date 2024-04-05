@@ -35,7 +35,7 @@ export default function Projectswipe() {
   return (
     <div className="px-10 mb-9">
       <div className="flex justify-between items-center">
-        <p className="text-3xl text-custom-blue font-bold mb-3">Portefolio</p>
+        <p className="text-3xl text-custom-blue font-bold mb-3">Projects</p>
         {/* <div className="flex mb-4">
           <div className="text-custom-blue font-bold cursor-pointer">
             <Image src={backArrow} width={40} height={40} alt="backArrow" />
@@ -54,7 +54,9 @@ export default function Projectswipe() {
           navigation={true}
           modules={[Navigation]}
         >
-          {repositories.map((repository, index) => (
+          {repositories
+           .filter((repository) => repository.name !== "eutelmo")
+          .map((repository, index) => (
             <SwiperSlide key={`${index}_${repository.name}`}>
               <PortefolioComponent
                 languages={repository.language}

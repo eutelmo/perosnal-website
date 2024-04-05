@@ -11,20 +11,19 @@ export default function ResumeBox() {
       <div className="bg-custom-yellow rounded-lg h-auto p-5 flex">
         <div className="w-[50%] pr-10">
           <div className=" h-[100%]  flex justify-center  flex-col">
-            <p className="text-xl  font-teko text-custom-baby-blue ">
+            <p className="text-xl font-teko text-custom-baby-blue">
               curriculum vitae
             </p>
             <p className="text-4xl text-left font-teko text-custom-blue font-semibold">
-              Sabe mais sobre a minha jornada
+              Learn more about my journey
             </p>
 
-            <p className="text-base text-custom-blue text-justify ">
-              Nesta jornada profissional, sou como o Frodo, enfrentando reuniões
-              e desafios como se fossem a Mount Doom. Enfrentei bugs como se
-              fossem Orcs e aprendi com sábios mestres do YouTube. Com meu mapa
-              do tesouro repleto de experiências e humor afiado, estou pronto
-              para ser o Gandalf da vossa equipe - menos barba, mais habilidades
-              técnicas!
+            <p className="text-base text-custom-blue text-justify">
+              In this professional journey, I`m like Frodo, facing meetings and
+              challenges as if they were Mount Doom. I`ve tackled bugs as if
+              they were Orcs and learned from wise YouTube masters. With my
+              treasure map full of experiences and sharp humor, I`m ready to be
+              your team`s Gandalf - minus the beard, plus technical skills!
             </p>
 
             <DownloadFile isFooter={false} />

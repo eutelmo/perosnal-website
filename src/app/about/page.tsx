@@ -23,31 +23,30 @@ export default function AboutPage() {
               <p className="text-custom-baby-blue text-3xl font-teko font-semibold">
                 Olá sou o Telmo J. Moura
               </p>
-              <p className=" mt-2 font-sans leading-6">
-                Sou um entusiasta de tecnologia e desenvolvedor de software com
-                uma forte experiência em TypeScript, JavaScript e frameworks
-                como ReactJS, VueJS e React Native. Com um histórico de projetos
-                desafiadores e uma abordagem orientada para soluções, estou
-                comprometido em impulsionar a inovação e o progresso na
-                indústria de tecnologia.
+              <p className="mt-2 font-sans leading-6">
+                I`m a technology enthusiast and software developer with strong
+                experience in TypeScript, JavaScript, and frameworks like
+                ReactJS, VueJS, and React Native. With a background in
+                challenging projects and a solution-oriented approach, I`m
+                committed to driving innovation and progress in the technology
+                industry.
               </p>
               <p className="mt-2 font-sans leading-6">
-                🌏 Além da minha paixão pela tecnologia, tenho um sonho antigo
-                de viver na Austrália. Estou sempre atento a oportunidades que
-                me aproximem desse objetivo, enquanto continuo aprimorando
-                minhas habilidades e conhecimentos no campo do desenvolvimento
-                de software.
+                🌏 Besides my passion for technology, I have a longstanding
+                dream of living in Australia. I`m always on the lookout for
+                opportunities that bring me closer to that goal while continuing
+                to enhance my skills and knowledge in the field of software
+                development.
               </p>
               <p className="mt-2 font-sans leading-6">
-                💼 Estou aberto a novas conexões profissionais, discussões sobre
-                projetos empolgantes e oportunidades de colaboração. Seja você
-                um entusiasta da tecnologia como eu ou tenha insights sobre
-                oportunidades na Austrália, adoraria ter uma conversa!
+                💼 I`m open to new professional connections, discussions about
+                exciting projects, and collaboration opportunities. Whether
+                you`re a tech enthusiast like me, I`d love to have a
+                conversation!
               </p>
               <p className="mt-2 font-sans leading-6">
-                📬 Sinta-se à vontade para me enviar uma mensagem para
-                networking, consultas ou oportunidades de colaboração. Vamos
-                criar conexões significativas e impulsionar o sucesso juntos.
+                📬 Feel free to drop me a message for networking, inquiries, or
+                collaboration opportunities.
               </p>
             </div>
             <div className="w-[50%] flex-col justify-center items-center relative">
@@ -67,8 +66,8 @@ export default function AboutPage() {
           </div>
         </div>
 
-           {/* Swipe with Portefolio */}
-           <Projectswipe />
+        {/* Swipe with Portefolio */}
+        <Projectswipe />
         <p>About</p>
       </div>
 

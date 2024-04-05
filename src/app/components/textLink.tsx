@@ -1,5 +1,10 @@
 "use client";
 import React from "react";
+import Link from "next/link";
+
+//Utils
+import { usePathname } from "next/navigation";
+
 
 interface TextLinkProp {
   url: string;
@@ -8,11 +13,19 @@ interface TextLinkProp {
 }
 
 export default function TextLink({ url, text, isMainHeader }: TextLinkProp) {
+  const currentPath = usePathname();
+
   return (
-    <a href={url}>
-    <div className={`text-${isMainHeader ? 'custom-blue' : 'white'} font-teko px-2 text-xl hover:text-custom-yellow cursor-pointer`}>
-      <p>{text}</p>
-    </div>
-  </a>
+    <Link href={url}>
+      <div
+        className={`text-${
+          isMainHeader ? "custom-blue" : "white"
+        } font-teko px-2 text-xl hover:text-custom-yellow cursor-pointer ${
+          currentPath === url ? "underline decoration-custom-yellow" : ""
+        }`}
+      >
+        <p>{text}</p>
+      </div>
+    </Link>
   );
 }

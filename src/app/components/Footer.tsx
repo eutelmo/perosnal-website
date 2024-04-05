@@ -21,9 +21,9 @@ export default function Footer() {
 
       {/* Links */}
       <div className="flex flex-col items-start space-x-reverse">
-        <TextLinkForFooter isMainHeader={true} url="/about" text="SOBRE MIM" />
-        <TextLinkForFooter isMainHeader={true} url="" text="PROJETOS" />
-        <TextLinkForFooter isMainHeader={true} url="" text="CONTACTOS" />
+        <TextLinkForFooter isMainHeader={true} url="/about" text="ABOUT ME" />
+        <TextLinkForFooter isMainHeader={true} url="/projects" text="PROJECTS" />
+        <TextLinkForFooter isMainHeader={true} url="" text="CONTACTS" />
         <div className="text-custom-blue font-teko px-2 text-xl underline decoration-solid hover:opacity-50 cursor-pointer">
           <DownloadFile isFooter={true} />
         </div>
