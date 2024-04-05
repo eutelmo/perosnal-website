@@ -54,7 +54,9 @@ export default function Projectswipe() {
           navigation={true}
           modules={[Navigation]}
         >
-          {repositories.map((repository, index) => (
+          {repositories
+           .filter((repository) => repository.name !== "eutelmo")
+          .map((repository, index) => (
             <SwiperSlide key={`${index}_${repository.name}`}>
               <PortefolioComponent
                 languages={repository.language}
