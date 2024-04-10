@@ -3,8 +3,10 @@ import Image from "next/image";
 
 // Image
 import IconWebsite from "../../../public/iconSite.png";
-import DownloadFile from "./downloadFile";
+
+// Components
 import TextLink from "./textLink";
+import HeaderLogoLink from "./HeaderLogoLink";
 
 interface Headerprops {
   isMainHeader: boolean;
@@ -13,16 +15,7 @@ interface Headerprops {
 function Header({ isMainHeader }: Headerprops) {
   return (
     <div className="p-5 py-5 w-full max-h-20  backdrop-blur-sm flex items-center absolute justify-between z-50">
-      <div className="flex items-center">
-        <div className="w-10 h-10 rounded-lg overflow-hidden">
-          <Image src={IconWebsite} alt="Site Icon" fill={false} />
-        </div>
-        <div>
-          <p className="font-bold text-custom-yellow text-lg leading-5 ml-2">
-            Telmo J. <br /> Moura
-          </p>
-        </div>
-      </div>
+      <HeaderLogoLink url={"/"} isMainHeader={isMainHeader} />
       <div className="flex items-center space-x-reverse">
         <TextLink isMainHeader={isMainHeader} url="/about" text="ABOUT ME" />
         <TextLink isMainHeader={isMainHeader} url="/projects" text="PROJECTS" />
