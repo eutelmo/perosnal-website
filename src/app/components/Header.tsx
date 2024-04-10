@@ -19,7 +19,7 @@ function Header({ isMainHeader }: Headerprops) {
       <div className="flex items-center space-x-reverse">
         <TextLink isMainHeader={isMainHeader} url="/about" text="ABOUT ME" />
         <TextLink isMainHeader={isMainHeader} url="/projects" text="PROJECTS" />
-        <TextLink isMainHeader={isMainHeader} url="" text="CONTACTS" />
+        {/* <TextLink isMainHeader={isMainHeader} url="" text="CONTACTS" /> */}
       </div>
     </div>
   );

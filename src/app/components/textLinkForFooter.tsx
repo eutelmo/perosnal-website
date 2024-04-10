@@ -19,7 +19,7 @@ export default function TextLinkForFooter({ url, text }: TextLinkProp) {
       <div
         className={`text-${
           currentPath === url ? "custom-baby-blue" : "custom-blue"
-        } font-teko px-2 text-xl hover:opacity-70 cursor-pointer`}
+        } font-teko px-2 sm:text-xl text-2xl hover:opacity-70 cursor-pointer`}
       >
         <p>{text}</p>
       </div>

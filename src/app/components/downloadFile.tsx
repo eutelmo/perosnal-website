@@ -13,7 +13,7 @@ export default function DownloadFile({ isFooter }: BodyProps) {
       {isFooter ? (
         <a href="/pdf/TelmoMouraResume.pdf" download>
           <div className="flex items-center">
-            <p className="text-xl text-left font-teko underline text-custom-blue">
+            <p className="sm:text-xl text-2xl text-left font-teko underline text-custom-blue">
               Download my CV
             </p>
           </div>
