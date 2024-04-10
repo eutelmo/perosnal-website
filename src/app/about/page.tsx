@@ -23,7 +23,7 @@ export default function AboutPage() {
               <p className="text-custom-baby-blue text-3xl font-teko font-semibold">
                 Olá sou o Telmo J. Moura
               </p>
-              <p className="mt-2 font-sans leading-6 text-justify">
+              <p className="mt-2 font-sans text-white leading-6 text-justify">
                 I`m a technology enthusiast and software developer with strong
                 experience in TypeScript, JavaScript, and frameworks like
                 ReactJS, VueJS, and React Native. With a background in
@@ -31,20 +31,20 @@ export default function AboutPage() {
                 committed to driving innovation and progress in the technology
                 industry.
               </p>
-              <p className="sm:mt-2 mt-4 font-sans leading-6 text-justify">
+              <p className="sm:mt-2 mt-4 text-white font-sans leading-6 text-justify">
                 🌏 Besides my passion for technology, I have a longstanding
                 dream of living in Australia. I`m always on the lookout for
                 opportunities that bring me closer to that goal while continuing
                 to enhance my skills and knowledge in the field of software
                 development.
               </p>
-              <p className="sm:mt-2 mt-4 font-sans leading-6 text-justify">
+              <p className="sm:mt-2 mt-4 text-white font-sans leading-6 text-justify">
                 💼 I`m open to new professional connections, discussions about
                 exciting projects, and collaboration opportunities. Whether
                 you`re a tech enthusiast like me, I`d love to have a
                 conversation!
               </p>
-              <p className="sm:mt-2 mt-4 font-sans leading-6 text-justify">
+              <p className="sm:mt-2 mt-4 text-white font-sans leading-6 text-justify">
                 📬 Feel free to drop me a message for networking, inquiries, or
                 collaboration opportunities.
               </p>
@@ -68,7 +68,6 @@ export default function AboutPage() {
 
         {/* Swipe with Portefolio */}
         <Projectswipe />
-        <p>About</p>
       </div>
 
       <Footer />
