@@ -52,7 +52,7 @@ export default function PortefolioPage() {
       {/* MObile sm:block hidden */}
       <div className="sm:hidden block min-h-[100vh]">
         <div className="w-full bg-custom-blue min-h-[50vh] z-20"></div>
-        <div className="-mt-[80%] px-9 ">
+        <div className="-mt-[60%] px-9 ">
           <p className="font-teko text-4xl">Projects</p>
           <div className="flex flex-col">
             {repositories
