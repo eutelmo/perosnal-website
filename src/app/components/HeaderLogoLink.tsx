@@ -16,14 +16,14 @@ export default function HeaderLogoLink({ url, isMainHeader }: HeaderLogoProps) {
   return (
     <a href={url}>
       <div className="flex items-center">
-        <div className="w-10 h-10 rounded-lg overflow-hidden">
+        <div className="sm:w-10 w-14 sm:h-10 h-14 rounded-lg overflow-hidden">
           <Image src={IconWebsite} alt="Site Icon" fill={false} />
         </div>
         <div>
           <p
             className={`font-bold text-${
               isMainHeader ? "custom-blue" : "white"
-            } leading-5 ml-2`}
+            } sm:leading-5 leading-5 ml-2 sm:text-base text-lg`}
           >
             Telmo J. <br /> Moura
           </p>
