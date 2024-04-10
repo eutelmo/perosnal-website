@@ -24,6 +24,7 @@ export default function HomePage() {
     <>
       <Header isMainHeader={true} />
       <div className="min-h-screen bg-white">
+        {/* Photo section */}
         {/* desktop */}
         <div className=" sm:block hidden w-full min-h-min z-20">
           <div className="absolute mt-[10%] pl-[57%]">
@@ -74,9 +75,10 @@ export default function HomePage() {
         </div>
 
         {/* stack section */}
-        <div className="flex px-40 justify-between mt-10 mb-9">
+        <div className="flex sm:flex-row flex-col sm:px-40 px:20 justify-between mt-10 mb-9">
+          {/* mt-4 */}
           <div className="">
-            <div className="flex">
+          <div className="flex justify-center ">
               <div>
                 <Image
                   src={javascript}
@@ -106,13 +108,13 @@ export default function HomePage() {
             <p className="font-teko text-center text-custom-blue text-3xl mt-4 leading-3">
               language
             </p>
-            <p className="font-teko text-center text-custom-baby-blue text-lg">
+            <p className="font-teko text-center text-custom-baby-blue text-lg w-auto">
               Javascript, Typescript
             </p>
           </div>
 
           <div className="">
-            <div className="flex">
+            <div className="flex sm:mt-0 mt-4 justify-center">
               <div>
                 <Image
                   src={vue}
@@ -162,7 +164,7 @@ export default function HomePage() {
           </div>
 
           <div className="">
-            <div className="flex">
+            <div className="flex sm:mt-0 mt-4 justify-center">
               <div>
                 <Image
                   src={react}
