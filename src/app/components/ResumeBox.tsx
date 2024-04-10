@@ -7,9 +7,9 @@ import DownloadFile from "./downloadFile";
 
 export default function ResumeBox() {
   return (
-    <div className="px-10 mb-9">
-      <div className="bg-custom-yellow rounded-lg h-auto p-5 flex">
-        <div className="w-[50%] pr-10">
+    <div className="sm:px-10 px-5 mb-9">
+      <div className="bg-custom-yellow rounded-lg h-auto p-5 flex sm:flex-row flex-col">
+        <div className="sm:w-[50%] sm:pr-10">
           <div className=" h-[100%]  flex justify-center  flex-col">
             <p className="text-xl font-teko text-custom-baby-blue">
               curriculum vitae
@@ -30,7 +30,7 @@ export default function ResumeBox() {
           </div>
         </div>
 
-        <div className="w-[50%] flex justify-center">
+        <div className="sm:w-[50%] flex justify-center">
           <Image
             src={Adventure}
             alt="Site-Icon"

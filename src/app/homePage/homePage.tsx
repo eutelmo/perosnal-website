@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 //Images
-import photo1 from "../../../public/photoForHomepage.jpg";
+import photo1 from "../../../public/photo2.png";
 import typescript from "../../../public/assets/icons/typescript.png";
 import javascript from "../../../public/assets/icons/js.png";
 import vue from "../../../public/assets/icons/vue.png";
@@ -22,14 +22,16 @@ import Footer from "../components/Footer";
 export default function HomePage() {
   return (
     <>
-      <Header isMainHeader={true}/>
+      <Header isMainHeader={true} />
       <div className="min-h-screen bg-white">
-        <div className="w-full min-h-min z-20">
+        {/* Photo section */}
+        {/* desktop */}
+        <div className=" sm:block hidden w-full min-h-min z-20">
           <div className="absolute mt-[10%] pl-[57%]">
-            <p className="text-5xl w-[60%] backdrop-blur-sm text-custom-yellow font-teko ">
+            <p className="text-5xl w-[60%]  text-custom-blue font-teko ">
               Telmo J. Moura
             </p>
-            <p className="text-8xl  backdrop-blur-sm text-custom-yellow font-lobster">
+            <p className="text-8xl text-custom-blue font-lobster">
               Front End <br /> Developer
             </p>
           </div>
@@ -49,10 +51,34 @@ export default function HomePage() {
           <div className="absolute bottom-0 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-white"></div>
         </div>
 
+        {/* mobile */}
+        <div className="sm:hidden block w-full min-h-min z-20">
+          <div className="absolute mt-[35%] w-full">
+            <p className="text-5xl text-custom-blue text-center font-lobster">
+              Front End Developer
+            </p>
+          </div>
+          <Image
+            src={photo1}
+            alt="Site-Icon"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "100vh",
+              objectFit: "cover",
+              zIndex: "-1",
+            }}
+          />
+          <div className="absolute bottom-0 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-white"></div>
+        </div>
+
         {/* stack section */}
-        <div className="flex px-40 justify-between mt-10 mb-9">
+        <div className="flex sm:flex-row flex-col sm:px-40 px:20 justify-between mt-10 mb-9">
+          {/* mt-4 */}
           <div className="">
-            <div className="flex">
+          <div className="flex justify-center ">
               <div>
                 <Image
                   src={javascript}
@@ -82,13 +108,13 @@ export default function HomePage() {
             <p className="font-teko text-center text-custom-blue text-3xl mt-4 leading-3">
               language
             </p>
-            <p className="font-teko text-center text-custom-baby-blue text-lg">
+            <p className="font-teko text-center text-custom-baby-blue text-lg w-auto">
               Javascript, Typescript
             </p>
           </div>
 
           <div className="">
-            <div className="flex">
+            <div className="flex sm:mt-0 mt-4 justify-center">
               <div>
                 <Image
                   src={vue}
@@ -138,7 +164,7 @@ export default function HomePage() {
           </div>
 
           <div className="">
-            <div className="flex">
+            <div className="flex sm:mt-0 mt-4 justify-center">
               <div>
                 <Image
                   src={react}
@@ -166,8 +192,6 @@ export default function HomePage() {
 
         {/* Swipe with Portefolio */}
         <Projectswipe />
-
-        
       </div>
       <Footer />
     </>

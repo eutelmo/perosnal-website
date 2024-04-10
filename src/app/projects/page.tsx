@@ -24,8 +24,8 @@ export default function PortefolioPage() {
   return (
     <>
       <Header isMainHeader={false} />
-
-      <div className="min-h-[100vh]">
+      {/* Desktop */}
+      <div className="sm:block hidden min-h-[100vh]">
         <div className="w-full bg-custom-blue min-h-[35vh] z-20"></div>
         <div className="pt-48 px-9 -mt-[25%]">
           <p className="font-teko text-5xl">Projects</p>
@@ -45,6 +45,27 @@ export default function PortefolioPage() {
                 <div key={repositories.length + index}></div>
               )
             )}
+          </div>
+        </div>
+      </div>
+
+      {/* MObile sm:block hidden */}
+      <div className="sm:hidden block min-h-[100vh]">
+        <div className="w-full bg-custom-blue min-h-[50vh] z-20"></div>
+        <div className="-mt-[80%] px-9 ">
+          <p className="font-teko text-4xl">Projects</p>
+          <div className="flex flex-col">
+            {repositories
+              .filter((repository) => repository.name !== "eutelmo")
+              .map((repository, index) => (
+                <PortefolioComponent
+                  key={index}
+                  languages={repository.language}
+                  title={repository.name}
+                  html_url={repository.html_url}
+                />
+              ))}
+           
           </div>
         </div>
       </div>

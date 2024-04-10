@@ -23,6 +23,7 @@ const config: Config = {
         caveat: ["Caveat", "sans-serif"],
         teko: ["Teko", "sans-serif"],
       },
+      
     },
   },
   plugins: [],
