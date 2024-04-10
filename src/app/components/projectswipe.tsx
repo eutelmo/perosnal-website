@@ -46,27 +46,53 @@ export default function Projectswipe() {
         </div> */}
       </div>
 
-      {repositories.length > 0 && (
-        <Swiper
-          spaceBetween={30}
-          slidesPerView={5}
-          loop={true}
-          navigation={true}
-          modules={[Navigation]}
-        >
-          {repositories
-           .filter((repository) => repository.name !== "eutelmo")
-          .map((repository, index) => (
-            <SwiperSlide key={`${index}_${repository.name}`}>
-              <PortefolioComponent
-                languages={repository.language}
-                title={repository.name}
-                html_url={repository.html_url}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      )}
+      <div className="sm:block hidden">
+        {repositories.length > 0 && (
+          <Swiper
+            spaceBetween={30}
+            slidesPerView={5}
+            loop={true}
+            navigation={true}
+            modules={[Navigation]}
+          >
+            {repositories
+              .filter((repository) => repository.name !== "eutelmo")
+              .map((repository, index) => (
+                <SwiperSlide key={`${index}_${repository.name}`}>
+                  <PortefolioComponent
+                    languages={repository.language}
+                    title={repository.name}
+                    html_url={repository.html_url}
+                  />
+                </SwiperSlide>
+              ))}
+          </Swiper>
+        )}
+      </div>
+
+      <div className="sm:hidden block">
+        {repositories.length > 0 && (
+          <Swiper
+            spaceBetween={30}
+            slidesPerView={1}
+            loop={true}
+            navigation={true}
+            modules={[Navigation]}
+          >
+            {repositories
+              .filter((repository) => repository.name !== "eutelmo")
+              .map((repository, index) => (
+                <SwiperSlide key={`${index}_${repository.name}`}>
+                  <PortefolioComponent
+                    languages={repository.language}
+                    title={repository.name}
+                    html_url={repository.html_url}
+                  />
+                </SwiperSlide>
+              ))}
+          </Swiper>
+        )}
+      </div>
     </div>
   );
 }
