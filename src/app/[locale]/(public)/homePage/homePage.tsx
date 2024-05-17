@@ -58,7 +58,7 @@ export default function HomePage() {
         </div>
 
         {/* mobile */}
-        <div className="sm:hidden block w-full min-h-min z-20">
+        <div className="sm:hidden block w-full min-h-min z-20 ">
           <div className="absolute mt-[35%] w-full">
             <p className="text-5xl text-custom-blue text-center font-lobster">
               Front End Developer
@@ -69,9 +69,9 @@ export default function HomePage() {
             alt="Site-Icon"
             width={0}
             height={0}
-            sizes="100vw"
+            // sizes="100vw"
             style={{
-              width: "100%",
+              // width: "100%",
               height: `calc(100vh - ${gradientBarHeight}px)`,
               objectFit: "cover",
               zIndex: "-1",
