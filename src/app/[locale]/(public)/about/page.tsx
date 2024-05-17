@@ -4,12 +4,12 @@ import React from "react";
 import Image from "next/image";
 
 // Components
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
 
 //Images
-import profile from "../../../public/eu.png";
-import Projectswipe from "../components/projectswipe";
+import profile from "../../../../../public/eu.png";
+import Projectswipe from "../../../components/projectswipe";
 
 export default function AboutPage() {
   return (

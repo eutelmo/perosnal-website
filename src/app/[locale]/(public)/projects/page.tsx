@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 
 //Components
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import PortefolioComponent from "../components/portefolioComponent";
+import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
+import PortefolioComponent from "../../../components/portefolioComponent";
 
 interface RepositoryProps {
   name: string;

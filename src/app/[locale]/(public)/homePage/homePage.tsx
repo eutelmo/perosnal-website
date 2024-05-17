@@ -4,22 +4,26 @@ import React from "react";
 import Image from "next/image";
 
 //Images
-import photo1 from "../../../public/photo2.png";
-import typescript from "../../../public/assets/icons/typescript.png";
-import javascript from "../../../public/assets/icons/js.png";
-import vue from "../../../public/assets/icons/vue.png";
-import react from "../../../public/assets/icons/react.png";
-import next from "../../../public/assets/icons/next-js.png";
-import reactNative from "../../../public/assets/icons/react-native.png";
+import photo1 from "../../../../../public/photo2.png";
+import typescript from "../../../../../public/assets/icons/typescript.png";
+import javascript from "../../../../../public/assets/icons/js.png";
+import vue from "../../../../../public/assets/icons/vue.png";
+import react from "../../../../../public/assets/icons/react.png";
+import next from "../../../../../public/assets/icons/next-js.png";
+import reactNative from "../../../../../public/assets/icons/react-native.png";
 
 //Components
-import Header from "../components/Header";
-import ResumeBox from "../components/ResumeBox";
-import PortefolioComponent from "../components/portefolioComponent";
-import Projectswipe from "../components/projectswipe";
-import Footer from "../components/Footer";
+import Header from "../../../components/Header";
+import ResumeBox from "../../../components/ResumeBox";
+import PortefolioComponent from "../../../components/portefolioComponent";
+import Projectswipe from "../../../components/projectswipe";
+import Footer from "../../../components/Footer";
+import { useTranslations } from "next-intl";
 
 export default function HomePage() {
+  const t = useTranslations();
+  t("journey.journeyTitle")
+
   return (
     <>
       <Header isMainHeader={true} />
@@ -78,7 +82,7 @@ export default function HomePage() {
         <div className="flex sm:flex-row flex-col sm:px-40 px:20 justify-between mt-10 mb-9">
           {/* mt-4 */}
           <div className="">
-          <div className="flex justify-center ">
+            <div className="flex justify-center ">
               <div>
                 <Image
                   src={javascript}
@@ -106,7 +110,8 @@ export default function HomePage() {
               </div>
             </div>
             <p className="font-teko text-center text-custom-blue text-3xl mt-4 leading-3">
-              language
+              {/* language */}
+              {t("stacks.language")}
             </p>
             <p className="font-teko text-center text-custom-baby-blue text-lg w-auto">
               Javascript, Typescript
@@ -155,7 +160,8 @@ export default function HomePage() {
               </div>
             </div>
             <p className="font-teko text-center text-custom-blue text-3xl mt-4 leading-3">
-              Web
+            {t("stacks.web")}
+
             </p>
 
             <p className="font-teko text-center text-custom-baby-blue text-lg ">
@@ -179,7 +185,8 @@ export default function HomePage() {
               </div>
             </div>
             <p className="font-teko text-center text-custom-blue text-3xl mt-4 leading-4">
-              Mobile
+            {t("stacks.mobile")}
+
             </p>
             <p className="font-teko text-center text-custom-baby-blue text-lg">
               React Native

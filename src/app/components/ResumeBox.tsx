@@ -4,8 +4,10 @@ import Image from "next/image";
 // Image
 import Adventure from "../../../public/assets/gif/giphy.gif";
 import DownloadFile from "./downloadFile";
+import { useTranslations } from "next-intl";
 
 export default function ResumeBox() {
+  const t = useTranslations();
   return (
     <div className="sm:px-10 px-5 mb-9">
       <div className="bg-custom-yellow rounded-lg h-auto p-5 flex sm:flex-row flex-col">
@@ -15,15 +17,13 @@ export default function ResumeBox() {
               curriculum vitae
             </p>
             <p className="text-4xl text-left font-teko text-custom-blue font-semibold">
-              Learn more about my journey
+              {/* Learn more about my journey */}
+              {t("journey.journeyTitle")}
             </p>
 
             <p className="text-base text-custom-blue text-justify">
-              In this professional journey, I`m like Frodo, facing meetings and
-              challenges as if they were Mount Doom. I`ve tackled bugs as if
-              they were Orcs and learned from wise YouTube masters. With my
-              treasure map full of experiences and sharp humor, I`m ready to be
-              your team`s Gandalf - minus the beard, plus technical skills!
+            {t("journey.journeyBody")}
+
             </p>
 
             <DownloadFile isFooter={false} />
