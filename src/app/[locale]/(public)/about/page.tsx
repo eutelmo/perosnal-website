@@ -2,6 +2,7 @@ import React from "react";
 
 //Utils
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 // Components
 import Header from "../../../components/Header";
@@ -12,6 +13,7 @@ import profile from "../../../../../public/eu.png";
 import Projectswipe from "../../../components/projectswipe";
 
 export default function AboutPage() {
+  const t = useTranslations();
   return (
     <>
       <Header isMainHeader={false} />
@@ -21,32 +23,19 @@ export default function AboutPage() {
           <div className="sm:pt-48 pt-32 pb-10 sm:pb-0 px-9 sm:flex">
             <div className="sm:w-[50%]">
               <p className="text-custom-baby-blue text-3xl font-teko font-semibold">
-                Olá sou o Telmo J. Moura
+                {t("aboutMePage.aboutMeTitle")}
               </p>
               <p className="mt-2 font-sans text-white leading-6 text-justify">
-                I`m a technology enthusiast and software developer with strong
-                experience in TypeScript, JavaScript, and frameworks like
-                ReactJS, VueJS, and React Native. With a background in
-                challenging projects and a solution-oriented approach, I`m
-                committed to driving innovation and progress in the technology
-                industry.
+                {t("aboutMePage.aboutMeBodyFirst")}
               </p>
               <p className="sm:mt-2 mt-4 text-white font-sans leading-6 text-justify">
-                🌏 Besides my passion for technology, I have a longstanding
-                dream of living in Australia. I`m always on the lookout for
-                opportunities that bring me closer to that goal while continuing
-                to enhance my skills and knowledge in the field of software
-                development.
+                🌏 {t("aboutMePage.aboutMeBodySecond")}
               </p>
               <p className="sm:mt-2 mt-4 text-white font-sans leading-6 text-justify">
-                💼 I`m open to new professional connections, discussions about
-                exciting projects, and collaboration opportunities. Whether
-                you`re a tech enthusiast like me, I`d love to have a
-                conversation!
+                💼 {t("aboutMePage.aboutMeBodyThird")}
               </p>
               <p className="sm:mt-2 mt-4 text-white font-sans leading-6 text-justify">
-                📬 Feel free to drop me a message for networking, inquiries, or
-                collaboration opportunities.
+                📬 {t("aboutMePage.aboutMeBodyLast")}
               </p>
             </div>
             <div className="sm:w-[50%] flex-col justify-center items-center relative mt-5 sm:mt-0">

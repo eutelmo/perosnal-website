@@ -16,6 +16,7 @@ import PortefolioComponent from "./portefolioComponent";
 // Images
 import backArrow from "../../../public/assets/icons/left-arrow.png";
 import nextArrow from "../../../public/assets/icons/right-arrow.png";
+import { useTranslations } from "next-intl";
 
 interface RepositoryProps {
   name: string;
@@ -24,6 +25,7 @@ interface RepositoryProps {
 }
 
 export default function Projectswipe() {
+  const t= useTranslations()
   const [repositories, setRepositories] = useState<RepositoryProps[]>([]);
 
   useEffect(() => {
@@ -35,7 +37,7 @@ export default function Projectswipe() {
   return (
     <div className="px-10 mb-9">
       <div className="flex justify-between items-center">
-        <p className="text-3xl text-custom-blue font-bold mb-3">Projects</p>
+        <p className="text-3xl text-custom-blue font-bold mb-3">{t("projectTitle")}</p>
         {/* <div className="flex mb-4">
           <div className="text-custom-blue font-bold cursor-pointer">
             <Image src={backArrow} width={40} height={40} alt="backArrow" />

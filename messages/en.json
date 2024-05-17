@@ -1,7 +1,7 @@
 {
   "links": {
     "aboutMe": "ABOUT ME",
-    "projects": "PROJETS",
+    "projects": "PROJECTS",
     "contacts": "CONTACTS"
   },
   "stacks": {
@@ -14,13 +14,13 @@
     "journeyBody": "In this professional journey, I`m like Frodo, facing meetings and challenges as if they were Mount Doom. I`ve tackled bugs as if they were Orcs and learned from wise YouTube masters. With my treasure map full of experiences and sharp humor, I`m ready to be your team`s Gandalf - minus the beard, plus technical skills!"
   },
   "resumeText": "Curriculum vitae here",
-  "projectTitle": "Projets",
+  "projectTitle": "Projects",
   "aboutMePage": {
     "aboutMeTitle": "Hello! I´m Telmo J. Moura",
     "aboutMeBodyFirst": "I`m a technology enthusiast and software developer with strong experience in TypeScript, JavaScript, and frameworks like ReactJS, VueJS, and React Native. With a background in challenging projects and a solution-oriented approach, I`m committed to driving innovation and progress in the technology industry.",
-    "aboutMeBodySecond": "🌏 Besides my passion for technology, I have a longstanding dream of living in Australia. I`m always on the lookout for opportunities that bring me closer to that goal while continuing to enhance my skills and knowledge in the field of software development.",
-    "aboutMeBodyThird": "💼 I`m open to new professional connections, discussions about exciting projects, and collaboration opportunities. Whether you`re a tech enthusiast like me, I`d love to have a conversation!",
-    "aboutMeBodyLast": "📬 Feel free to drop me a message for networking, inquiries, or collaboration opportunities."
+    "aboutMeBodySecond": "Besides my passion for technology, I have a longstanding dream of living in Australia. I`m always on the lookout for opportunities that bring me closer to that goal while continuing to enhance my skills and knowledge in the field of software development.",
+    "aboutMeBodyThird": "I`m open to new professional connections, discussions about exciting projects, and collaboration opportunities. Whether you`re a tech enthusiast like me, I`d love to have a conversation!",
+    "aboutMeBodyLast": "Feel free to drop me a message for networking, inquiries, or collaboration opportunities."
   },
   "Footer": {
     "FooterContacts": "Contacts",
