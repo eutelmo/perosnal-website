@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React from "react";
 
@@ -8,6 +9,7 @@ interface BodyProps {
 }
 
 export default function DownloadFile({ isFooter }: BodyProps) {
+  const t = useTranslations();
   return (
     <>
       {isFooter ? (
@@ -23,7 +25,8 @@ export default function DownloadFile({ isFooter }: BodyProps) {
           <div className="flex items-center sm:justify-start justify-center">
             <p className="mt-[3%]">👉</p>
             <p className="text-xl text-left font-teko underline mt-4 text-custom-blue">
-              Curriculum vitae here
+              {/* Curriculum vitae here */}
+              {t("resumeText")}
             </p>
             <p className="mt-[3%]">👈</p>
           </div>

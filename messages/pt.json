@@ -1,0 +1,29 @@
+{
+  "links": {
+    "aboutMe": "SOBRE MIM",
+    "projects": "PROJETOS",
+    "contacts": "CONTACTOS"
+  },
+  "stacks": {
+    "language": "Linguagens",
+    "web": "Web",
+    "mobile": "Mobile"
+  },
+  "journey": {
+    "journeyTitle": "Sabe mais sobre a minha Jornada",
+    "journeyBody": "Nesta jornada profissional, sou como Frodo, enfrentando reuniões e desafios como se fossem o Monte da Perdição. Enfrentei bugs como se fossem Orcs e aprendi com sábios mestres do YouTube. Com meu mapa do tesouro cheio de experiências e humor afiado, estou pronto para ser o Gandalf da sua equipe - sem a barba, mas com habilidades técnicas de sobra!"
+  },
+  "resumeText": "Download do CV aqui",
+  "projectTitle": "Projetos",
+  "aboutMePage": {
+    "aboutMeTitle": "Olá sou o Telmo J. Moura",
+    "aboutMeBodyFirst": "Sou um entusiasta de tecnologia e desenvolvedor de software com ampla experiência em TypeScript, JavaScript e frameworks como ReactJS, VueJS e React Native. Com uma base em projetos desafiadores e uma abordagem orientada para soluções, estou comprometido em impulsionar a inovação e o progresso na indústria de tecnologia.",
+    "aboutMeBodySecond": "Além da minha paixão pela tecnologia, tenho um sonho antigo de morar na Austrália. Estou sempre de olho em oportunidades que me aproximem desse objetivo, ao mesmo tempo em que continuo aprimorando minhas habilidades e conhecimentos na área de desenvolvimento de software.",
+    "aboutMeBodyThird": "Estou aberto a novas conexões profissionais, discussões sobre projetos empolgantes e oportunidades de colaboração. Se você também é um entusiasta de tecnologia como eu, adoraria ter uma conversa!",
+    "aboutMeBodyLast": "Sinta-se à vontade para me enviar uma mensagem para networking, consultas ou oportunidades de colaboração."
+  },
+  "Footer": {
+    "FooterContacts": "Contactos",
+    "FooterResume": "Descarrega o meu CV"
+  }
+}

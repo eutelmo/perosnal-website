@@ -2,9 +2,12 @@
 import React, { useEffect, useState } from "react";
 
 //Components
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import PortefolioComponent from "../components/portefolioComponent";
+import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
+import PortefolioComponent from "../../../components/portefolioComponent";
+
+//Utils
+import { useTranslations } from "next-intl";
 
 interface RepositoryProps {
   name: string;
@@ -13,6 +16,7 @@ interface RepositoryProps {
 }
 
 export default function PortefolioPage() {
+  const t = useTranslations();
   const [repositories, setRepositories] = useState<RepositoryProps[]>([]);
 
   useEffect(() => {
@@ -28,7 +32,7 @@ export default function PortefolioPage() {
       <div className="sm:block hidden min-h-[100vh]">
         <div className="w-full bg-custom-blue min-h-[35vh] z-20"></div>
         <div className="pt-48 px-9 -mt-[25%]">
-          <p className="font-teko text-5xl">Projects</p>
+          <p className="font-teko text-5xl">{t("projectTitle")}</p>
           <div className="grid grid-cols-5 gap-4">
             {repositories
               .filter((repository) => repository.name !== "eutelmo")
@@ -55,17 +59,17 @@ export default function PortefolioPage() {
         <div className="-mt-[60%] px-9 ">
           <p className="font-teko text-4xl">Projects</p>
           <div className="flex flex-col">
-            {repositories
-              .filter((repository) => repository.name !== "eutelmo")
-              .map((repository, index) => (
-                <PortefolioComponent
-                  key={index}
-                  languages={repository.language}
-                  title={repository.name}
-                  html_url={repository.html_url}
-                />
-              ))}
-           
+            {repositories &&
+              repositories
+                .filter((repository) => repository.name !== "eutelmo")
+                .map((repository, index) => (
+                  <PortefolioComponent
+                    key={index}
+                    languages={repository.language}
+                    title={repository.name}
+                    html_url={repository.html_url}
+                  />
+                ))}
           </div>
         </div>
       </div>
