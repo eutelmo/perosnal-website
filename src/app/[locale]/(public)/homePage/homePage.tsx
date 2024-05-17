@@ -67,10 +67,10 @@ export default function HomePage() {
           <Image
             src={photo1}
             alt="Site-Icon"
-            sizes="100vw"
+            // sizes="100vw"
             style={{
-              width: '100%',
-              height: 'auto',
+              // width: "100%",
+              height: `calc(100vh - ${gradientBarHeight}px)`,
               objectFit: "cover",
               zIndex: "-1",
             }}
@@ -198,7 +198,7 @@ export default function HomePage() {
         <ResumeBox />
 
         {/* Swipe with Portefolio */}
-        {/* <Projectswipe /> */}
+        <Projectswipe />
       </div>
       <Footer />
     </>
