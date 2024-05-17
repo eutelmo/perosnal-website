@@ -13,14 +13,14 @@ interface TextLinkProp {
 }
 
 export default function TextLink({ url, text, isMainHeader }: TextLinkProp) {
-  function getCurrentPathWithoutPrefix(URLprefix: string) {
+  const getCurrentPathWithoutPrefix = (URLprefix: string) => {
     const match = URLprefix.match(/^\/[a-z]{2}\//i);
     if (match) {
       return URLprefix.replace(match[0], "/");
     }
 
     return URLprefix;
-  }
+  };
   const currentPath = usePathname();
 
   return (

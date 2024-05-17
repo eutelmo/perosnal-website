@@ -5,6 +5,8 @@ import React, { useEffect, useState } from "react";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import PortefolioComponent from "../../../components/portefolioComponent";
+
+//Utils
 import { useTranslations } from "next-intl";
 
 interface RepositoryProps {
@@ -57,16 +59,17 @@ export default function PortefolioPage() {
         <div className="-mt-[60%] px-9 ">
           <p className="font-teko text-4xl">Projects</p>
           <div className="flex flex-col">
-            {repositories
-              .filter((repository) => repository.name !== "eutelmo")
-              .map((repository, index) => (
-                <PortefolioComponent
-                  key={index}
-                  languages={repository.language}
-                  title={repository.name}
-                  html_url={repository.html_url}
-                />
-              ))}
+            {repositories &&
+              repositories
+                .filter((repository) => repository.name !== "eutelmo")
+                .map((repository, index) => (
+                  <PortefolioComponent
+                    key={index}
+                    languages={repository.language}
+                    title={repository.name}
+                    html_url={repository.html_url}
+                  />
+                ))}
           </div>
         </div>
       </div>

@@ -198,7 +198,7 @@ export default function HomePage() {
         <ResumeBox />
 
         {/* Swipe with Portefolio */}
-        <Projectswipe />
+        {/* <Projectswipe /> */}
       </div>
       <Footer />
     </>
