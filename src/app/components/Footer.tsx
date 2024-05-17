@@ -13,6 +13,8 @@ import DownloadFile from "./downloadFile";
 import FooterLogo from "./FooterLogosLink";
 import TextLinkForFooter from "./textLinkForFooter";
 import { useTranslations } from "next-intl";
+import FooterMailInput from "./FooterMailInput";
+import FooterPhoneInput from "./FooterPhoneInput";
 
 export default function Footer() {
   const t = useTranslations();
@@ -22,11 +24,15 @@ export default function Footer() {
       <FooterLogo url="/" isPageLogo={true} />
       {/* Links */}
       <div className="flex flex-col sm:items-start items-center mt-4 sm:mt-0 space-x-reverse">
-        <TextLinkForFooter isMainHeader={true} url="/about" text={t("links.aboutMe")} />
+        <TextLinkForFooter
+          isMainHeader={true}
+          url="/about"
+          text={t("links.aboutMe")}
+        />
         <TextLinkForFooter
           isMainHeader={true}
           url="/projects"
-          text={t("links.projects")} 
+          text={t("links.projects")}
         />
         {/* <TextLinkForFooter isMainHeader={true} url="" text="CONTACTS" /> */}
         <div className="text-custom-blue font-teko px-2 text-xl underline decoration-solid hover:opacity-50 cursor-pointer">
@@ -40,10 +46,10 @@ export default function Footer() {
           <p>{t("links.contacts")}</p>
         </div>
         <div className="text-custom-blue font-teko px-2 sm:text-xl text-2xl opacity-50 cursor-pointer">
-          <p>telmop1999@gmail.com</p>
+          <FooterMailInput />
         </div>
         <div className="text-custom-blue font-teko px-2 sm:text-xl text-2xl opacity-50 cursor-pointer">
-          <p>+351 914 234 172</p>
+          <FooterPhoneInput />
         </div>
       </div>
 

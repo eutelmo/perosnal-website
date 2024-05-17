@@ -48,7 +48,7 @@ export const LanguagePicker: React.FC = () => {
   };
 
   return (
-    <div className="flex space-x-4">
+    <div className="flex space-x-4 items-center justify-center">
       <button onClick={() => handleLocaleChange()}>
         <Image
           src={!isAuflag ? AustraliaFlag : PortugalFlag}
