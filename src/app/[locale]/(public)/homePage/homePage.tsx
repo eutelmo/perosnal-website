@@ -24,6 +24,8 @@ export default function HomePage() {
   const t = useTranslations();
   t("journey.journeyTitle")
 
+  const gradientBarHeight = 20;
+
   return (
     <>
       <Header isMainHeader={true} />
@@ -70,7 +72,7 @@ export default function HomePage() {
             sizes="100vw"
             style={{
               width: "100%",
-              height: "100vh",
+              height: `calc(100vh - ${gradientBarHeight}px)`,
               objectFit: "cover",
               zIndex: "-1",
             }}
