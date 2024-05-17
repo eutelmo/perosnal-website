@@ -67,12 +67,10 @@ export default function HomePage() {
           <Image
             src={photo1}
             alt="Site-Icon"
-            width={0}
-            height={0}
-            // sizes="100vw"
+            sizes="100vw"
             style={{
-              // width: "100%",
-              height: `calc(100vh - ${gradientBarHeight}px)`,
+              width: '100%',
+              height: 'auto',
               objectFit: "cover",
               zIndex: "-1",
             }}
