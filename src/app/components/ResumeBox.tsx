@@ -22,8 +22,7 @@ export default function ResumeBox() {
             </p>
 
             <p className="text-base text-custom-blue text-justify">
-            {t("journey.journeyBody")}
-
+              {t("journey.journeyBody")}
             </p>
 
             <DownloadFile isFooter={false} />
@@ -36,13 +35,14 @@ export default function ResumeBox() {
             alt="Site-Icon"
             width={314}
             height={212}
-            objectFit="cover"
+            // objectFit="cover"
             style={{
               width: "90%",
               maxWidth: "100%",
               height: "auto",
               maxHeight: "300px",
               borderRadius: "8px",
+              objectFit: "cover",
             }}
           />
         </div>

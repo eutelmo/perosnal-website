@@ -22,6 +22,12 @@
     "aboutMeBodyThird": "Estou aberto a novas conexões profissionais, discussões sobre projetos empolgantes e oportunidades de colaboração. Se você também é um entusiasta de tecnologia como eu, adoraria ter uma conversa!",
     "aboutMeBodyLast": "Sinta-se à vontade para me enviar uma mensagem para networking, consultas ou oportunidades de colaboração."
   },
+  "notFoundPage": {
+    "notFoundTitle": "404",
+    "notFoundBody": "Tem nada aqui! :/",
+    "notFoundSecondBody": "Upsss!",
+    "notFoundReturn": "Vamos Voltar!"
+  },
   "Footer": {
     "FooterContacts": "Contactos",
     "FooterResume": "Descarrega o meu CV"
