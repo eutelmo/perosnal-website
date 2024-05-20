@@ -24,7 +24,7 @@ export default function NotFound() {
           <p className="text-xl text-custom-blue text-center font-mono font-semibold">
             {t("notFoundPage.notFoundBody")}
           </p>
-          <div className="w-full flex justify-center my-4">
+          <div className="w-full flex justify-center my-8 px-9 sm:my-4 ">
             <Image
               src={imageNotFound}
               alt="Site-Icon"
