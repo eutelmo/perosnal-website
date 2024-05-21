@@ -19,16 +19,18 @@ import PortefolioComponent from "../../../components/portefolioComponent";
 import Projectswipe from "../../../components/projectswipe";
 import Footer from "../../../components/Footer";
 import { useTranslations } from "next-intl";
+import MobileMenu from "@/app/components/MoblieMenu";
 
 export default function HomePage() {
   const t = useTranslations();
-  t("journey.journeyTitle")
+  t("journey.journeyTitle");
 
-  const gradientBarHeight = 20;
+
 
   return (
     <>
       <Header isMainHeader={true} />
+      <MobileMenu isOpen={true} />
       <div className="min-h-screen bg-white">
         {/* Photo section */}
         {/* desktop */}
@@ -70,7 +72,7 @@ export default function HomePage() {
             // sizes="100vw"
             style={{
               // width: "100%",
-              height: `calc(100vh - ${gradientBarHeight}px)`,
+              height: "90vh",
               objectFit: "cover",
               zIndex: "-1",
             }}
@@ -160,8 +162,7 @@ export default function HomePage() {
               </div>
             </div>
             <p className="font-teko text-center text-custom-blue text-3xl mt-4 leading-3">
-            {t("stacks.web")}
-
+              {t("stacks.web")}
             </p>
 
             <p className="font-teko text-center text-custom-baby-blue text-lg ">
@@ -185,8 +186,7 @@ export default function HomePage() {
               </div>
             </div>
             <p className="font-teko text-center text-custom-blue text-3xl mt-4 leading-4">
-            {t("stacks.mobile")}
-
+              {t("stacks.mobile")}
             </p>
             <p className="font-teko text-center text-custom-baby-blue text-lg">
               React Native

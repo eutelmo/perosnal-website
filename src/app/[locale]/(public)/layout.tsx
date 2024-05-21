@@ -1,5 +1,5 @@
 import React from "react";
-import {getMessages} from 'next-intl/server';
+import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -24,10 +24,10 @@ type Props = {
 
 export default async function RootLayout({
   children,
-  params: {locale}
+  params: { locale },
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 }) {
   const messages = await getMessages();
 
@@ -40,6 +40,4 @@ export default async function RootLayout({
       </body>
     </html>
   );
-};
-
-
+}
