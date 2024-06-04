@@ -72,7 +72,7 @@ export default function HomePage() {
             // sizes="100vw"
             style={{
               // width: "100%",
-              height: "90vh",
+              height: "85vh",
               objectFit: "cover",
               zIndex: "-1",
             }}
